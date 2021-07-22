@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(151, 151, 151);
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h1 {
+    color: white;
+}
+
+#subEngine {
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: lightsteelblue;
+}
+
+#keyenter {
+    margin-right: 2rem;
+}
+
+#searchForm {
+    font-size: 30px;
+}

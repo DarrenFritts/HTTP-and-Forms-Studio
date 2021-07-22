@@ -2,19 +2,24 @@
 
 <head>
 	<meta charset="utf-8">
+	<link href="styles.css" rel="stylesheet" type="text/css"/>
+
 	<script>
 		// TODO: create a handler
 		function setSearchEngine() {
 			let selectedRadBtn = document.querySelector("input[name=engine]:checked");
 			let engine = selectedRadBtn.value;
 			const actions = {
-				"google": "https://www.google.com/",
+				"google": "https://www.google.com/search",
 				"duckDuckGo": "https://duckduckgo.com/",
 				"bing": "https://www.bing.com/search",
 				"ask": "https://www.ask.com/web"
 			}
+			
 			let searchForm = document.getElementById("searchForm");
 			searchForm.action = actions[engine];
+
+			// TESTS
 			// searchForm.action = "https://duckduckgo.com/";
 			// searchForm.action = actions["google"];
 			// alert(engine);
@@ -25,12 +30,18 @@
 			// TODO: register the handler
 			const go = document.getElementById("subEngine");
 			go.addEventListener("click", setSearchEngine);
+
+			// VALIDATION
+			// let selectedRadBtn = document.querySelector("input[name=engine]:checked");
+			// if (!selectedRadBtn) {
+			// 	alert("Please enter search term and select a search engine.");
+			// }
 		});
 	</script>
 </head>
 
 <body>
-
+	<h1>LaunchCode's Multi-Search</h1><br>
 	<form id="searchForm">
     <!-- TODO: add form elements -->
 	<input type="text" name="q"/>
@@ -40,5 +51,4 @@
 	<input type="radio" name="engine" value="ask"/><label>Ask</label>
 	<input type="submit" id="subEngine" value="Go!">
 	</form>
-
 </body>
