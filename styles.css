@@ -1,21 +1,21 @@
 body {
-    background-color: rgb(151, 151, 151);
+    /* background-color: rgb(151, 151, 151); */
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 h1 {
-    color: white;
+    color: rgb(107, 159, 226);
 }
 
 #subEngine {
     font-size: 2rem;
-    margin-left: 2rem;
-    background-color: lightsteelblue;
+    margin-left: 1rem;
+    background-color: rgb(107, 159, 226);
 }
 
-#keyenter {
-    margin-right: 2rem;
+#q {
+    margin-right: 1rem;
 }
 
 #searchForm {
